@@ -43,7 +43,7 @@
   header nav{
     margin: 7px 0;
   }
-  /* add flexbox to the nav elements */
+  /* flexbox to the nav elements */
   header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -252,7 +252,6 @@
     display: grid;
     gap: 10px;
     padding: 10px;
-    /* use the repeat syntax to create equal columns */
     grid-template-columns: repeat(8, 1fr); 
     grid-template-rows: repeat(3, 1fr);
     color:  var(--secondary-color);
@@ -394,7 +393,7 @@
           animation: none;
           width:100%;
         }
-        /* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
+        
         /* media query for the about me container */
         .aboutme-container {
           grid-template-columns: repeat(1, 1fr);
