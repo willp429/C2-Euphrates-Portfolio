@@ -1,0 +1,489 @@
+/* WHOLE PAGE STYLE */
+/*need to tell the broswer to ignore the padding in the overall width*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary-color: #214b6d;
+    --secondary-color: #0f5045;
+    --tertiary-color: #e49218;
+    --light-text: rgb(209, 207, 207);
+  }
+  /* -END WHOLE PAGE STYLE- */
+  
+  /*BODY STYLE STARTS*/
+  body{
+    color: #214b6d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  /*-BODY STYLE ENDS-*/
+  
+  /* HEADER STYLE STARTS */
+  header{
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* the -webkit-sticky is used to make sure other browsers can use the stylesheet */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: aquamarine;
+    /*INSERT BACKGROUND BANNER IMAGE ONCE CREATED HERE
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    */
+  }
+  /* style to the nav element and moved it to the right side of the page */
+  header nav{
+    margin: 7px 0;
+  }
+  /* add flexbox to the nav elements */
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+  }
+  .navigation{
+    justify-content: flex-end;
+  }
+  /* styled the a elements in the header list */
+  header nav ul li a{
+    color: #214b6d;
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 1.0vw;
+    text-decoration: none;
+    float: right;
+    text-shadow: 0 0 10px rgba(90, 86, 86, 0.247);
+  }/* hover pseudo */
+  header nav ul li a:hover {
+    background: rgba(33, 75, 109, 0.568);
+    color: rgb(234, 234, 234);
+    border-radius: 10px;
+    text-shadow: none;
+  }
+  /* -HEADER STYLE ENDS- */
+  
+  /*HERO STYLE SECTION START*/
+  .hero{
+      /*INSERT BACKGROUND IMAGE HERE
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    */
+    background-color: cadetblue;
+  }
+  
+  .hero div p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;  /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    text-align: center;
+    animation: typing 3.0s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  /* -HERO SECTION STYLE ENDS- */
+  
+  /* ABOUT ME SECTION STARTS */
+  .aboutme-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .aboutme-container{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    /* use column % when you want to specifically allocate space to each */
+    grid-template-columns: 10% 30% 58%;
+    grid-template-rows: repeat(1, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  .aboutme-grid-item {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutme-title{
+    margin: 10px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border: none;
+    font-size: 200%;
+    font-weight: bolder;
+    letter-spacing: .5em;
+    box-shadow: none;
+    width: 200px;
+  }
+  /* - FUTURE TASK INSERT HEADSHOT
+  .aboutme-headshot{
+    background-image: url("../images/headshot.JPG");
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    display: flex;
+    margin: 10px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-content: flex-end;
+  */
+
+    .aboutme-bio{
+    margin: 10px;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    justify-content: center;
+  }
+  
+  .aboutme-bio {    
+    line-height: 1.3;
+    padding: 25px;
+  }
+  .aboutme-bio h3 {
+    font-size: 28px;
+  }
+  .aboutme-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .trainer-bio p {
+    font-size: 17px;
+  
+  }
+  /* -ABOUT ME SECTION STARTS ENDS- */
+  
+  
+  /* SECTION STYLE STARTS */
+  section{
+    padding: 60px;
+  }
+  .section-title{
+    padding: 20px;
+    text-align: center;
+  }
+  /* -SECTION STYLE ENDS- */
+  
+  
+  /* MY WORK STYLE SECTION */
+  .mywork-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }  
+  .mywork-grid-container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    /* use column % when you want to specifically allocate space to each */
+    grid-template-columns: 10% 30% 29% 29%;
+    grid-template-rows: repeat(3, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  .mywork-grid-item {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 10px 10px 10px rgba(90, 86, 86, 0.247);
+    height: auto;
+  }
+  /* create style for the link that resides in the primary box for my projects, in this case 'run buddy' */
+  .mywork-grid-item.runbuddy a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 150%;
+  }
+  .mywork-grid-item.title{
+    margin: 10px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border: none;
+    font-size: 200%;
+    font-weight: bolder;
+    letter-spacing: .5em;
+    box-shadow: none;
+    width: 200px;
+  }
+  .mywork-grid-item.runbuddy{
+    margin: 10px;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  /* -MY WORK STYLE SECTION ENDS- */
+  
+  /* CONTACT ME STYLE SECTION */
+  .contactme-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }  
+  .contactme-grid-container {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    /* use the repeat syntax to create equal columns */
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.4rem;
+  }
+  /* create universal style for all of the contactme grid items */
+  .contactme-grid-item {
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(90, 86, 86, 0.247);
+  }
+  /* create style for the grid container title, which will display vertically and in a larger font size */
+  .contactme-grid-item.title{
+    margin: 10px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border: none;
+    font-size: 200%;
+    font-weight: bolder;
+    letter-spacing: .5em;
+    box-shadow: none;
+    width: 200px;
+  }
+  /* create specific style for the grid item that will contain the email title and address */
+  .contactme-grid-item.email{
+    margin: 10px;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  /* tell the email paragraph element to hide until the end user hovers over the email */
+  .contactme-grid-item.email p{
+    display: none;
+    padding: 20px;
+  }
+  /* when the cursor hovers over 'email', then display the paragraph element */
+  .contactme-grid-item.email:hover p{
+    display: block;
+    font-weight: bold;
+  }
+  .contactme-grid-item.phone{
+    margin: 10px;
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  /* tell the paragraph element to hide in the phone class until the user hovers over the card */
+  .contactme-grid-item.phone p{
+    display: none;
+    padding: 20px;
+  }
+  /* when the cursor hovers over 'phone', then display the paragraph element */
+  .contactme-grid-item.phone:hover p{
+    display: block;
+    font-weight: bold;
+  }
+  .contactme-grid-item.linkedin{
+    margin: 10px;
+    grid-column: 6 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  /* tell the paragraph element to hide in the linkedin class until the user hovers over the card */
+  .contactme-grid-item.linkedin a{
+    display: none;
+    padding: 20px;
+  }
+  /* when the cursor hovers over 'linkedin', then display the paragraph element */
+  .contactme-grid-item.linkedin:hover a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  /* -CONTACT ME STYLE SECTION ENDS- */
+  
+  /* FOOTER STYLE SECTION */
+  footer{
+    background: var(--primary-color);
+    color: var(--light-text);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer h4{
+    font-weight: lighter;
+  }
+  /* -FOOTER STYLE SECTION ENDS- */
+  
+  /* MEDIA QUERIES AND OTHER STYLING EFFECTS */
+  /* the typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+  }
+  /* the typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  @media screen and (max-width: 980px) {
+      header {
+          padding-bottom: 0;
+          justify-content: center;
+          position: relative;
+        }
+        header nav ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+          flex: 2 100%;
+        }
+        header nav ul li a {
+          font-size: 20px;
+        }
+        .hero div{
+          width: 60%;
+          flex-wrap: wrap;
+        }
+        .hero div p{
+          display: block;
+          animation: none;
+          width:100%;
+        }
+        /* TODO: Left off here, this section isn't complete. Need to figure out these media queries... */
+        /* media query for the about me container */
+        .aboutme-container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          font-size: .7rem;
+        }
+        .aboutme-title{
+          grid-column: 1 / span 1;
+          grid-row: 1 / span 1;
+          writing-mode: horizontal-tb;
+          transform: none;
+          text-align: center;
+          width: 100%;
+        }
+        .aboutme-headshot{
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          display: flex;
+        }
+        .aboutme-bio{
+          grid-column: 1 / span 1;
+          grid-row: 3 / span 1;
+          display: flex;
+        }
+        .aboutme-item{
+          flex-wrap: wrap;
+          height: auto;
+        }
+        /* media query for the my work container */
+        .mywork-grid-container {
+          grid-template-columns: 50% 50%;
+          grid-template-rows: repeat(6, 1fr);
+          font-size: .7rem;
+        }
+        .mywork-grid-item.title{
+          grid-column: 1 / span 2;
+          grid-row: 1 / span 1;
+          writing-mode: horizontal-tb;
+          transform: none;
+          text-align: center;
+          width: 100%;
+        }
+        .mywork-grid-item.runbuddy{
+          margin: 10px;
+          grid-column: 1 / span 2;
+          grid-row: 2 / span 2;
+          display: flex;
+        }
+        .mywork-grid-item{
+          flex-wrap: wrap;
+          height: auto;
+        }
+        /* media query for the contact me container */
+        .contactme-grid-container {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+          font-size: .7rem;
+        }
+        .contactme-grid-item{
+          flex-wrap: wrap;
+          height: auto;
+        }
+        .contactme-grid-item.title{
+          grid-column: 1 / span 1;
+          grid-row: 1 / span 1;
+          writing-mode: horizontal-tb;
+          transform: none;
+          text-align: center;
+          width: 100%;
+        }
+        .contactme-grid-item.email{
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          display: flex;
+        }
+        .contactme-grid-item.phone{
+          grid-column: 1 / span 1;
+          grid-row: 3 / span 1;
+          display: flex;
+        }
+        .contactme-grid-item.linkedin{
+          grid-column: 1 / span 1;
+          grid-row: 4 / span 1;
+          display: flex;
+        }
+        /* media query for the footer */
+        footer h4, footer div {
+          text-align: center;
+          width: 100%;
+        }
+    }
+    
