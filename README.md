@@ -17,3 +17,6 @@
 Structure changes:
 - Optimize CSS classes
 - Focus on media queries
+
+##Screenshot
+![](assets/images/portfolio.png)
