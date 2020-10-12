@@ -4,8 +4,8 @@
 - Future tasks include optimization and adding of Javascript to allow a deeper UX
 
 ## Web skills use include:
-- * HTML*
-- * Advanced CSS* - flexboxes, grid layout and attempted media queries
+- HTML
+- Advanced CSS - flexboxes, grid layout and attempted media queries
 
 ## Future tasks:
 - Add background image (visually pleasing)
