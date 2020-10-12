@@ -7,16 +7,17 @@
   }
   :root {
     --primary-color: #062a47;
-    --secondary-color: #189984;
-    --tertiary-color: #9c0f66;
-    --light-text: rgb(209, 207, 207);
+    --secondary-color: #06085f;
+    --tertiary-color: #0f879c;
+    --light-text: #dadada;
   }
   /* -END WHOLE PAGE STYLE- */
   
   /*BODY STYLE STARTS*/
   body{
-    color: #062a47;
+    color: var(--light-text);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:var(--light-text);
   }
   /*-BODY STYLE ENDS-*/
   
@@ -30,15 +31,23 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: aquamarine;
-    /*INSERT BACKGROUND BANNER IMAGE ONCE CREATED HERE
-    background-image: url("../images/hero.jpg");
+    background-color: var(--secondary-color);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     background-position: 80%;
-    */
   }
+  header h1{
+      font-weight: bold;
+      margin: 0%;
+      font-size: 36px;
+      color: var(--light-text);
+      display: flex;
+      float: left;
+  }
+header a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+
   /* style to the nav element and moved it to the right side of the page */
   header nav{
     margin: 7px 0;
@@ -49,13 +58,14 @@
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    justify-content: space-between;
   }
   .navigation{
     justify-content: flex-end;
   }
   /* styled the a elements in the header list */
   header nav ul li a{
-    color: #062a47;
+    color: var(--light-text);
     padding: 10px 15px;
     font-weight: bolder;
     font-size: 1.0vw;
@@ -73,24 +83,20 @@
   
   /*HERO STYLE SECTION START*/
   .hero{
-      /*INSERT BACKGROUND IMAGE HERE
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    */
-    background-color: cadetblue;
+    height: 300px;
+    background-position: bottom;
   }
-  
   .hero div p{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap;  /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    text-align: center;
-    animation: typing 3.0s steps(40, end), blink-caret .75s step-end infinite;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    float: right;
   }
   /* -HERO SECTION STYLE ENDS- */
   
@@ -358,16 +364,6 @@
   /* -FOOTER STYLE SECTION ENDS- */
   
   /* MEDIA QUERIES AND OTHER STYLING EFFECTS */
-  /* the typing effect */
-  @keyframes typing {
-    from { width: 0% }
-    to { width: 100% }
-  }
-  /* the typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
   @media screen and (max-width: 980px) {
       header {
           padding-bottom: 0;
