@@ -1,5 +1,8 @@
 # euphrates
-Created skeleton/template of Portfolio layout with HTML and CSS structure. 
+Created skeleton/template of Portfolio layout with HTML and CSS structure.
+Skills include
+- HTML
+- Advanced CSS - flexboxes, grid layout and attempted media queries
 
 Future tasks:
 - Add background image (visually pleasing)
@@ -7,7 +10,7 @@ Future tasks:
 - Add about me/objective
 - Update resume to include web development work
 - Change color schemes
-- Post live Run Buddy page
+- Post live Run Buddy page (figure out why an old commit is live)
 Structure changes:
 - Optimize CSS classes
 - Focus on media queries
