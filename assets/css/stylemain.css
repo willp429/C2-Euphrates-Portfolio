@@ -6,16 +6,16 @@
     box-sizing: border-box;
   }
   :root {
-    --primary-color: #214b6d;
-    --secondary-color: #0f5045;
-    --tertiary-color: #e49218;
+    --primary-color: #062a47;
+    --secondary-color: #189984;
+    --tertiary-color: #9c0f66;
     --light-text: rgb(209, 207, 207);
   }
   /* -END WHOLE PAGE STYLE- */
   
   /*BODY STYLE STARTS*/
   body{
-    color: #214b6d;
+    color: #062a47;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   /*-BODY STYLE ENDS-*/
@@ -55,7 +55,7 @@
   }
   /* styled the a elements in the header list */
   header nav ul li a{
-    color: #214b6d;
+    color: #062a47;
     padding: 10px 15px;
     font-weight: bolder;
     font-size: 1.0vw;
@@ -393,7 +393,7 @@
           animation: none;
           width:100%;
         }
-        
+
         /* media query for the about me container */
         .aboutme-container {
           grid-template-columns: repeat(1, 1fr);
